@@ -12,7 +12,7 @@ A CLI tool to scaffold a Nuxt application with opinionated defaults including:
 ## Usage
 
 ```bash
-pnpm dlx nuxt-init my-app
+pnpm dlx @kerunix/nuxt-init my-app
 
 ## What it does
 
