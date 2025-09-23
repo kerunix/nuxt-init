@@ -4,9 +4,6 @@ import { x as exec } from "tinyexec";
 export async function execInCurrentDir(command: string, args: string[]): Promise<Result> {
   return await exec(command, args, {
     throwOnError: true,
-    nodeOptions: {
-      stdio: "inherit",
-    },
   });
 }
 
