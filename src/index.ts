@@ -102,11 +102,11 @@ export const main = defineCommand({
       const componentsConfig = JSON.parse(componentsJsonContent);
 
       componentsConfig.aliases = {
-        components: "@/app/components",
-        composables: "@/app/composables",
-        utils: "@/app/lib/utils",
-        ui: "@/app/components/ui",
-        lib: "@/app/lib",
+        components: "~/components",
+        composables: "~/composables",
+        utils: "~/lib/utils",
+        ui: "~/components/ui",
+        lib: "~/lib/utils",
       };
 
       writeFileSync(componentsJsonPath, JSON.stringify(componentsConfig, null, 2));
