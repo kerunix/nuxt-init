@@ -1,7 +1,7 @@
 {
   "name": "@kerunix/nuxt-init",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "packageManager": "pnpm@10.15.0",
   "description": "CLI tool to scaffold a Nuxt application with opinionated defaults",
   "author": "",
