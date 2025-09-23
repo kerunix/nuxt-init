@@ -80,7 +80,7 @@ export const main = defineCommand({
         `{
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./app/*"]
     }
   },
   `,
@@ -102,11 +102,11 @@ export const main = defineCommand({
       const componentsConfig = JSON.parse(componentsJsonContent);
 
       componentsConfig.aliases = {
-        components: "~/components",
-        composables: "~/composables",
-        utils: "~/lib/utils",
-        ui: "~/components/ui",
-        lib: "~/lib/utils",
+        components: "@/components",
+        composables: "@/composables",
+        utils: "@/lib/utils",
+        ui: "@/components/ui",
+        lib: "@/lib",
       };
 
       writeFileSync(componentsJsonPath, JSON.stringify(componentsConfig, null, 2));
