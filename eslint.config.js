@@ -1,13 +1,12 @@
 // @ts-check
-import antfu from '@antfu/eslint-config';
+import antfu from "@antfu/eslint-config";
 
 export default antfu(
   {
-    type: 'lib',
-    pnpm: true,
+    type: "lib",
     stylistic: {
       semi: true,
-      quotes: 'double',
+      quotes: "double",
     },
   },
 );

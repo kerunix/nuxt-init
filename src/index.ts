@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { defineCommand, runMain } from "citty";
 import { loadFile, parseExpression, writeFile } from "magicast";
